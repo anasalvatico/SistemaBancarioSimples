@@ -4,16 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner le = new Scanner(System.in);
-        Cliente cliente = new Cliente();
-        Conta conta = new Conta();
-        conta.cliente = cliente;
+
 
         System.out.println("Bem vindo ao sistema bancário");
         System.out.println("Digite o seu nome para começar a criar sua conta");
-        cliente.nome = le.nextLine();
+        String nome = le.nextLine();
         System.out.println("Digite o seu cpf");
-        cliente.cpf = le.nextLine();
+        String cpf = le.nextLine();
 
+        Cliente cliente = new Cliente(nome, cpf);
+        Conta conta = new Conta(cliente);
 
 
         while(true) {

@@ -1,7 +1,14 @@
+import java.sql.SQLOutput;
 
 public class Conta {
-    Cliente cliente;
-    double saldo;
+    private Cliente cliente;
+    private double saldo;
+
+    public Conta(Cliente cliente){
+        this.cliente = cliente;
+        this.saldo = saldo;
+
+    }
 
     public void exibirSaldo(){
         System.out.println("Seu saldo atual é: "+this.saldo);
@@ -23,9 +30,13 @@ public class Conta {
             System.out.println("Não foi possível realizar o saque");
         }
 
+
+
     }
 
-
+    public Cliente getCliente() {
+        return cliente;
+    }
 }
 
 
