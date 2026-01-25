@@ -27,29 +27,31 @@ O projeto é composto pelas seguintes classes:
 - **Cliente**
   - Representa o cliente do banco
   - Contém dados como nome e CPF
+  - Utiliza encapsulamento com atributos privados, construtor e getters/setters
 
 - **Conta**
   - Representa a conta bancária
   - Possui saldo e está associada a um cliente
   - Contém as regras de negócio para saque e depósito
+  - Utiliza encapsulamento e construtor para associação com o cliente
 
 ---
 
 ## 🔗 Conceitos de Orientação a Objetos Aplicados
 
 - Associação entre classes (`Conta` possui um `Cliente`)
-- Encapsulamento inicial de responsabilidades
+- Encapsulamento (`private`, getters e setters)
+- Uso de construtores para inicialização de objetos
 - Separação de responsabilidades (regra de negócio vs interface)
-- Uso de métodos para operações bancárias
+- Controle de fluxo com estruturas de repetição e condição
 
 ---
 
 ## 📚 Objetivo do Projeto
 
-Este projeto foi desenvolvido com fins educacionais, como parte do aprendizado em Java e Programação Orientada a Objetos, servindo como base para evoluções futuras, como:
+Este projeto foi desenvolvido com fins educacionais, com foco no aprendizado de Java e Programação Orientada a Objetos, servindo como base para evoluções futuras, como:
 
-- Encapsulamento completo (private, getters/setters)
-- Uso de construtores
 - Suporte a múltiplas contas por cliente
-- Persistência de dados
+- Persistência de dados (arquivo ou banco de dados)
 - Interface gráfica ou API REST
+- Tratamento de exceções mais avançado
