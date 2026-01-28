@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Main {
@@ -24,13 +25,13 @@ public class Main {
             le.nextLine();
             if (numOperacao == 1) {
                 System.out.println("Valor a ser depositado: ");
-                double valorDepositado = le.nextDouble();
+                BigDecimal valorDepositado = le.nextBigDecimal();
                 le.nextLine();
                 conta.realizarDeposito(valorDepositado);
                 conta.exibirSaldo();
             } else if (numOperacao == 2) {
                 System.out.println("Valor a ser sacado: ");
-                double valorSacado = le.nextDouble();
+                BigDecimal valorSacado = le.nextBigDecimal();
                 le.nextLine();
                 conta.realizarSaque(valorSacado);
                 conta.exibirSaldo();
