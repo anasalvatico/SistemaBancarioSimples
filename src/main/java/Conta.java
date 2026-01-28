@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Conta {
     private Cliente cliente;
     private double saldo;

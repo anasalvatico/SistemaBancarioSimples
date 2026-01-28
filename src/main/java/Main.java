@@ -15,26 +15,26 @@ public class Main {
         Cliente cliente = new Cliente(nome, cpf);
         Conta conta = new Conta(cliente);
 
+        Menu menu = new Menu();
+
 
         while(true) {
-            System.out.println("Escolha a operação que quer realizar: 1 - depositar saldo, 2 - Sacar saldo, 3 - Sair da conta");
-            int opcao = le.nextInt();
+            menu.imprimirMenu();
+            int numOperacao = le.nextInt();
             le.nextLine();
-
-
-            if (opcao == 1) {
+            if (numOperacao == 1) {
                 System.out.println("Valor a ser depositado: ");
                 double valorDepositado = le.nextDouble();
                 le.nextLine();
                 conta.realizarDeposito(valorDepositado);
                 conta.exibirSaldo();
-            } else if (opcao == 2) {
+            } else if (numOperacao == 2) {
                 System.out.println("Valor a ser sacado: ");
                 double valorSacado = le.nextDouble();
                 le.nextLine();
                 conta.realizarSaque(valorSacado);
                 conta.exibirSaldo();
-            } else if (opcao == 3){
+            } else if (numOperacao == 3){
                 System.out.println("Saindo da conta");
                 break;
             }else{
