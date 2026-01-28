@@ -35,6 +35,12 @@ O projeto é composto pelas seguintes classes:
   - Contém as regras de negócio para saque e depósito
   - Utiliza encapsulamento e construtor para associação com o cliente
 
+- **Menu**
+
+  - Responsável pela exibição do menu interativo no console
+  - Apresenta as opções de operações disponíveis para o usuário
+  - Centraliza a lógica de apresentação do menu, separando interface do fluxo principal
+
 ---
 
 ## 🔗 Conceitos de Orientação a Objetos Aplicados
