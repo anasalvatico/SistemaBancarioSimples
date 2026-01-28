@@ -25,14 +25,14 @@ public class Main {
             le.nextLine();
             if (numOperacao == 1) {
                 System.out.println("Valor a ser depositado: ");
-                BigDecimal valorDepositado = le.nextBigDecimal();
-                le.nextLine();
+                String entrada = le.nextLine().replace(",", ".");
+                BigDecimal valorDepositado = new BigDecimal(entrada);
                 conta.realizarDeposito(valorDepositado);
                 conta.exibirSaldo();
             } else if (numOperacao == 2) {
                 System.out.println("Valor a ser sacado: ");
-                BigDecimal valorSacado = le.nextBigDecimal();
-                le.nextLine();
+                String entrada = le.nextLine().replace(",", ".");
+                BigDecimal valorSacado = new BigDecimal(entrada);
                 conta.realizarSaque(valorSacado);
                 conta.exibirSaldo();
             } else if (numOperacao == 3){
