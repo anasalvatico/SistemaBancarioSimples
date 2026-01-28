@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Conta {
     private Cliente cliente;
@@ -11,7 +12,7 @@ public class Conta {
     }
 
     public void exibirSaldo(){
-        System.out.println("Seu saldo atual é: "+this.saldo);
+        System.out.println("Seu saldo atual é: "+this.saldo.setScale(2, RoundingMode.HALF_UP));
     }
 
     public void realizarDeposito(BigDecimal valorDepositado){
