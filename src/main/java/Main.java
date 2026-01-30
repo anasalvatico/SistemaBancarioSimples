@@ -8,10 +8,19 @@ public class Main {
 
 
         System.out.println("Bem vindo ao sistema bancário");
-        System.out.println("Digite o seu nome para começar a criar sua conta");
-        String nome = le.nextLine();
-        System.out.println("Digite o seu cpf");
-        String cpf = le.nextLine();
+
+
+        String nome = "";
+        while (nome.isBlank()) {
+            System.out.println("Digite o seu nome para começar a criar sua conta:");
+            nome = le.nextLine();
+        }
+        String cpf = "";
+        while(cpf.isBlank()){
+            System.out.println("Digite o seu cpf");
+            cpf = le.nextLine();
+        }
+
 
         Cliente cliente = new Cliente(nome, cpf);
         Conta conta = new Conta(cliente);
