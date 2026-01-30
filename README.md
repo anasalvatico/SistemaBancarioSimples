@@ -13,6 +13,7 @@ Projeto simples em Java desenvolvido com o objetivo de praticar **Programação 
 - Saque em conta
 - Menu interativo em loop
 - Validação básica de valores
+- Validação para impedir nome e CPF vazios
 
 ---
 
