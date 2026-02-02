@@ -1,3 +1,5 @@
+package sistemabancariosimples.model;
+
 public class Cliente {
     private String nome;
     private String cpf;
@@ -6,6 +8,7 @@ public class Cliente {
         this.nome = nome;
         this.cpf = cpf;
     }
+
 
     public String getNome() {
         return nome;

@@ -11,7 +11,7 @@ Projeto simples em Java desenvolvido com o objetivo de praticar **Programação 
 - Exibição de saldo
 - Depósito em conta
 - Saque em conta
-- Menu interativo em loop
+- sistemabancariosimples.view.Menu interativo em loop
 - Validação básica de valores
 - Validação para impedir nome e CPF vazios
 
@@ -25,18 +25,18 @@ O projeto é composto pelas seguintes classes:
   - Responsável pela interação com o usuário via console
   - Controla o menu e o fluxo da aplicação
 
-- **Cliente**
+- **sistemabancariosimples.model.Cliente**
   - Representa o cliente do banco
   - Contém dados como nome e CPF
   - Utiliza encapsulamento com atributos privados, construtor e getters/setters
 
-- **Conta**
+- **sistemabancariosimples.model.Conta**
   - Representa a conta bancária
   - Possui saldo e está associada a um cliente
   - Contém as regras de negócio para saque e depósito
   - Utiliza encapsulamento e construtor para associação com o cliente
 
-- **Menu**
+- **sistemabancariosimples.view.Menu**
 
   - Responsável pela exibição do menu interativo no console
   - Apresenta as opções de operações disponíveis para o usuário
@@ -46,7 +46,7 @@ O projeto é composto pelas seguintes classes:
 
 ## 🔗 Conceitos de Orientação a Objetos Aplicados
 
-- Associação entre classes (`Conta` possui um `Cliente`)
+- Associação entre classes (`sistemabancariosimples.model.Conta` possui um `sistemabancariosimples.model.Cliente`)
 - Encapsulamento (`private`, getters e setters)
 - Uso de construtores para inicialização de objetos
 - Separação de responsabilidades (regra de negócio vs interface)

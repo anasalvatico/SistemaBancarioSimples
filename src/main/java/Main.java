@@ -1,3 +1,7 @@
+import sistemabancariosimples.model.Cliente;
+import sistemabancariosimples.model.Conta;
+import sistemabancariosimples.view.Menu;
+
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -21,14 +25,11 @@ public class Main {
             cpf = le.nextLine();
         }
 
-
         Cliente cliente = new Cliente(nome, cpf);
         Conta conta = new Conta(cliente);
-
         Menu menu = new Menu();
 
-
-        while(true) {
+       while(true) {
             menu.imprimirMenu();
             int numOperacao = le.nextInt();
             le.nextLine();

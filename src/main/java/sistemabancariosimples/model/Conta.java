@@ -1,3 +1,5 @@
+package sistemabancariosimples.model;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -35,9 +37,6 @@ public class Conta {
 
     }
 
-    public Cliente getCliente() {
-        return cliente;
-    }
 }
 
 
