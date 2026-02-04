@@ -19,7 +19,6 @@ public class ContaController {
 
     public void iniciarAplicacao(){
         mensagens.mensagemInicial();
-
         while(true){
             int numOperacao = menu.opcaoMenu();
             switch(numOperacao) {
