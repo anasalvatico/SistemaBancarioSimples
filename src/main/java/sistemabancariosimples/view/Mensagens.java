@@ -20,5 +20,9 @@ public class Mensagens {
         System.out.println("Saldo: " + saldo.setScale(2, BigDecimal.ROUND_HALF_UP));
     }
 
+    public void mensagemErroOperacao(){
+        System.out.println("Não foi possível realizar a operação");
+    }
+
 
 }
